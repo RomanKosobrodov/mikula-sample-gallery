@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link href="https://fonts.googleapis.com/css2?family=Federo&family=Cabin:wght@500&family=Roboto+Condensed&family=Source+Sans+Pro:wght@300&display=swap"
+      rel="stylesheet">
+    <link href="./_assets_/styles/theme.css" rel="stylesheet" type="text/css" media="all">
+    <title>
+       Mikula Sample Gallery 
+    </title>
+</head>
+<body>
+
+<nav>
+    <div class="navigation-container">
+    <ul class="navigation-bar">
+        
+        <li class="navigation-item">
+            <a class="navigation-link" href="./index.html">Home</a>
+        </li>
+        
+        <li class="navigation-item">
+            <a class="navigation-link" href="./about.html">About</a>
+        </li>
+        
+        <li class="navigation-item">
+            <a class="navigation-link" href="./blog/index.html">Blog</a>
+        </li>
+        
+        <li class="navigation-item">
+            <a class="navigation-link" href="./contact.html">Contact</a>
+        </li>
+        
+    </ul>
+    </div>
+</nav>
+<div class="main-container">
+    <div class="full-width">
+    
+    
+        <div class="user-text text-before">
+            <h1>Welcome</h1>
+<p>This is a demo gallery of images taken from Unsplash and Flickr and released under Creative Commons License.</p>
+<p><a href="_user-assets_/Creative_Commons-Attribution_4_International.pdf">Download</a> Creative Commons Attribution 4 International license.</p>
+        </div>
+    
+
+    
+        <ul class="child-album-list">
+            
+                <li class="child-album-item">
+                    <div class="child-album-container">
+                        <a class="child-album-link" href="objects/index.html">
+                            
+                            <img class="child-album-thumbnail" src="./_gallery_/images/thumbnails/e241bf22-c122-4ed0-a79d-8396544003f7.png"/>
+                            
+                        </a>
+                    </div>
+                    <div class="child-album-title">
+                        <p>Objects</p>
+                    </div>
+                </li>
+            
+                <li class="child-album-item">
+                    <div class="child-album-container">
+                        <a class="child-album-link" href="animals/index.html">
+                            
+                            <img class="child-album-thumbnail" src="./_gallery_/images/thumbnails/16b75193-f6f1-403d-a30c-39128bfe1a0d.png"/>
+                            
+                        </a>
+                    </div>
+                    <div class="child-album-title">
+                        <p>Animals</p>
+                    </div>
+                </li>
+            
+                <li class="child-album-item">
+                    <div class="child-album-container">
+                        <a class="child-album-link" href="people/index.html">
+                            
+                            <img class="child-album-thumbnail" src="./_gallery_/images/thumbnails/4497454c-836a-4ed4-bd21-b1a9436c69a1.png"/>
+                            
+                        </a>
+                    </div>
+                    <div class="child-album-title">
+                        <p>People</p>
+                    </div>
+                </li>
+            
+                <li class="child-album-item">
+                    <div class="child-album-container">
+                        <a class="child-album-link" href="landscapes/index.html">
+                            
+                            <img class="child-album-thumbnail" src="./_gallery_/images/thumbnails/67b2461b-b413-4af2-95bf-9fd35c60f311.png"/>
+                            
+                        </a>
+                    </div>
+                    <div class="child-album-title">
+                        <p>Landscapes</p>
+                    </div>
+                </li>
+            
+        </ul>
+    
+    
+    
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+    const vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    const max_columns = 3;
+    const padding = 2;
+    const heights = [0, 0, 0];
+    const counts = [0, 0, 0];
+
+    document.addEventListener('DOMContentLoaded', function() {
+        let root = document.documentElement;
+        const list_width = 80;
+        root.style.setProperty('--list-width', `${list_width}vw`);
+        root.style.setProperty('--thumbnail-padding', `${padding}vw`);
+        for (let c=1; c<=max_columns; c++ ) {
+            const k = c-1;
+            const width = (list_width - (c+1) * padding) / c;
+            let height = width * heights[k] + padding * (1 + counts[k]);
+            height = Math.ceil(1.015 * height) + 2 * padding;
+            root.style.setProperty(`--list-height${c}`, `${height}vw`);
+            root.style.setProperty(`--thumbnail-width${c}`, `${width}vw`);
+        }
+    });
+</script>
+
+
+</body>
+</html>

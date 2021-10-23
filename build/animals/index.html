@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link href="https://fonts.googleapis.com/css2?family=Federo&family=Cabin:wght@500&family=Roboto+Condensed&family=Source+Sans+Pro:wght@300&display=swap"
+      rel="stylesheet">
+    <link href="../_assets_/styles/theme.css" rel="stylesheet" type="text/css" media="all">
+    <title>
+       Animals 
+    </title>
+</head>
+<body>
+
+<nav>
+    <div class="navigation-container">
+    <ul class="navigation-bar">
+        
+        <li class="navigation-item">
+            <a class="navigation-link" href="../index.html">Home</a>
+        </li>
+        
+        <li class="navigation-item">
+            <a class="navigation-link" href="../about.html">About</a>
+        </li>
+        
+        <li class="navigation-item">
+            <a class="navigation-link" href="../blog/index.html">Blog</a>
+        </li>
+        
+        <li class="navigation-item">
+            <a class="navigation-link" href="../contact.html">Contact</a>
+        </li>
+        
+    </ul>
+    </div>
+</nav>
+<div class="main-container">
+    <div class="full-width">
+    
+        <div class="breadcrumbs">
+        
+            
+                <a class="breadcrumbs-link" href="../index.html">gallery</a>
+                <i class="breadcrumbs-divider"></i>
+            
+        
+            
+                <div class="breadcrumbs-current"> Animals </div>
+            
+        
+        </div>
+    
+    
+        <div class="user-text text-before">
+            <h1>Animals</h1>
+<p>Cute little (and not so little) animals excluding humans.</p>
+        </div>
+    
+
+    
+    
+        <ul class="thumbnail-list">
+            
+            <li class="thumbnail-item">
+                <div class="thumbnail-container">
+                    <a class="thumbnail-link" href="racoon.html">
+                        <img class="thumbnail-image" src="../_gallery_/images/thumbnails/16b75193-f6f1-403d-a30c-39128bfe1a0d.png"/>
+                    </a>
+                    <p class="thumbnail-title">Animal</p>
+                </div>
+            </li>
+            
+        </ul>
+
+    
+    
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+    const vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    const max_columns = 3;
+    const padding = 2;
+    const heights = [0.75, 0.75, 0.75];
+    const counts = [1, 1, 1];
+
+    document.addEventListener('DOMContentLoaded', function() {
+        let root = document.documentElement;
+        const list_width = 80;
+        root.style.setProperty('--list-width', `${list_width}vw`);
+        root.style.setProperty('--thumbnail-padding', `${padding}vw`);
+        for (let c=1; c<=max_columns; c++ ) {
+            const k = c-1;
+            const width = (list_width - (c+1) * padding) / c;
+            let height = width * heights[k] + padding * (1 + counts[k]);
+            height = Math.ceil(1.015 * height) + 2 * padding;
+            root.style.setProperty(`--list-height${c}`, `${height}vw`);
+            root.style.setProperty(`--thumbnail-width${c}`, `${width}vw`);
+        }
+    });
+</script>
+
+
+</body>
+</html>
