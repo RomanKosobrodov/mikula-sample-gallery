@@ -1,6 +1,0 @@
----
-image_format: "png"
-image_height: 600
-thumbnail_height: 200
-AWS_region: ap-southeast-2
-parallel_workers: 5

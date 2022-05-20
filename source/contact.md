@@ -1,5 +1,10 @@
 ---
-title: Contact
+meta:
+  description: contact information page
+  keywords: contact page
+  author: Mikula
+page_title: Contact Us
+title: Contacts
 order: 4
 ---
 
