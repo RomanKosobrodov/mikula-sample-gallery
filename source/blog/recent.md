@@ -64,6 +64,12 @@ Alternatively, a path relative to the current markdown file can be given
 ![Dog Image](dog.jpg "dog by Gustavo Zambelli on Unsplash")
 (Photo by <a href="https://unsplash.com/@zamax?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gustavo Zambelli</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>)
 
+## Resources
+
+Files for download can be included in a similar way, for example [text file](blog-assets/document.txt) or [image](angele-kamp-bDuh4oK_MCU-unsplash.jpg). This could be useful if you want to provide a link to a full-resolution file or a image in raw format.
+
 ## Credits
 
 Post Image <a href="https://unsplash.com/@romanbolozan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Roman Bolozan</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+Sample download image <a href="https://unsplash.com/@angelekamp?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Angèle Kamp</a> on <a href="https://unsplash.com/s/photos/frame?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
