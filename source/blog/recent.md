@@ -3,7 +3,7 @@ page_title: Mikula Sample Gallery Blog - Recent
 date: 2021-08-15
 permalink: most-recent
 title: Recent post in which the author shares his thoughts on modern blog post writing and life in general
-thumbnail: blog-assets/recent-thumbnail-blog.jpg
+thumbnail: blog-assets/roman-bolozan-e0y6bwZNhFo-unsplash.jpg
 ---
 
 # Recent
@@ -54,11 +54,16 @@ Ernest Hemingway
 
 ## Images
 
-Images can be stored in the `__assets__` folder:
+Images can be put in `blog-assets` folder:
 
-![Camp Fire Image](blog-assets/recent-thumbnail-blog.jpg "camp fire")
+![Looking on the mountain](blog-assets/emma-francis-CeuLsseKjIY-unsplash.jpg "Photo Emma Francis")
+(Photo by <a href="https://unsplash.com/@efranciswork?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Emma Francis</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>)
 
 Alternatively, a path relative to the current markdown file can be given
 
 ![Dog Image](dog.jpg "dog by Gustavo Zambelli on Unsplash")
 (Photo by <a href="https://unsplash.com/@zamax?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gustavo Zambelli</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>)
+
+## Credits
+
+Post Image <a href="https://unsplash.com/@romanbolozan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Roman Bolozan</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
